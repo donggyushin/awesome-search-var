@@ -1,0 +1,20 @@
+{
+  "name": "awesome-search-var",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/donggyushin/awesome-search-var.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.htm"
+  },
+  "dependencies": {
+    "postcss-preset-env": "^6.2.0"
+  },
+  "postcss": {
+    "plugins" : {
+      "postcss-preset-env": {
+        "stage": 0
+      }
+    }
+  }
+}

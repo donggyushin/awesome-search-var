@@ -1,0 +1,66 @@
+:root {
+    --redBackgroundColor: #e74c3c;
+    --darkBackgroundColor: #2d3436;
+}
+
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #e74c3c;
+    background-color: var(--redBackgroundColor);
+}
+
+
+.search-var {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #2d3436;
+    background-color: var(--darkBackgroundColor);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: flex
+}
+
+
+.search-var:hover .search-var__text {
+        width: 240px;
+        padding: 0 6px;
+    }
+
+
+.search-var:hover .search-var__button {
+        background-color: white;
+
+    }
+
+.search-var__button {
+    float: right;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-var__text {
+    border: none;
+    background:none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 1.6rem;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    caret-color: hotpink;
+}
+
